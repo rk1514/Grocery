@@ -10,7 +10,7 @@ function Header() {
     e.preventDefault();
     const query = e.target.elements.search.value.trim();
     if (query) {
-      navigate(/search?q=${encodeURIComponent(query)});
+      navigate(`/search?q=${encodeURIComponent(query)}`);
       e.target.reset();
     }
   };
